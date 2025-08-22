@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "xyz.peatral.better_spyglass.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "better_spyglass.refmap.json",
+  "minVersion": "0.8",
+  "mixins": [
+    "PlayerMixin",
+    "server.ServerGamePacketListenerImplMixin"
+  ],
+  "client": [
+    "client.AbstractClientPlayerMixin",
+    "client.MinecraftMixin",
+    "client.MouseHandlerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

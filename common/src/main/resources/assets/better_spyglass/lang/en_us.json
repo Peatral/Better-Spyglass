@@ -1,0 +1,9 @@
+{
+  "key.category.better_spyglass": "Better Spyglass",
+  "key.better_spyglass.use": "Use Spyglass",
+
+  "text.autoconfig.better_spyglass.title": "Better Spyglass Settings",
+  "text.autoconfig.better_spyglass.option.enableInventoryAccess": "Enable Inventory Access",
+  "text.autoconfig.better_spyglass.option.requireSpyglass": "Require Spyglass",
+  "text.autoconfig.better_spyglass.option.zoomStep": "Zoom Step Size"
+}
