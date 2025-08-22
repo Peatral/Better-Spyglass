@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/Peatral/Better-Spyglass/refs/heads/mc1.20.1/dev/src/main/resources/icon.png" alt="Logo" width="200"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/Peatral/Better-Spyglass/refs/heads/mc1.20.1/dev/src/main/resources/assets/better_spyglass/icon.png" alt="Logo" width="200"></p>
 <h1 align="center">Better Spyglass<br>
 <a href="https://github.com/Peatral/Better-Spyglass/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Peatral/Better-Spyglass?style=flat&color=900c3f" alt="License"></a>
 <a href="https://www.curseforge.com/minecraft/mc-mods/better-spyglass"><img src="http://cf.way2muchnoise.eu/1224595.svg" alt="CF"></a>
