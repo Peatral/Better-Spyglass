@@ -20,7 +20,10 @@ Please check if there is a key conflict before using!
 
 <h2>The mysterious belt slot</h2>
 The belt slot will be enabled when using
-- <a href="https://modrinth.com/mod/curios">Curios</a> on Forge
-- <a href="https://modrinth.com/mod/trinkets">Trinkets</a> on Fabric
+
+<ul>
+    <li><a href="https://modrinth.com/mod/curios">Curios</a> on Forge</li>
+    <li><a href="https://modrinth.com/mod/trinkets">Trinkets</a> on Fabric</li>
+</ul>
 
 Putting the spyglass into the belt slot will also make it available for use via the key.
