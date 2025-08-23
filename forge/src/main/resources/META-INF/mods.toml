@@ -36,15 +36,15 @@ ordering = "AFTER"
 side = "BOTH"
 
 [[dependencies.better_spyglass]]
+modId="cloth_config"
+mandatory=true
+versionRange="[11.1,)"
+ordering="BEFORE"
+side="BOTH"
+
+[[dependencies.better_spyglass]]
 modId="curios"
 mandatory=false
 versionRange="[5.9,6.0)"
 ordering="BEFORE"
 side="BOTH"
-
-[[dependencies.better_spyglass]]
-modId="cloth_config"
-mandatory=false
-versionRange="[11.1,)"
-ordering="BEFORE"
-side="CLIENT"
