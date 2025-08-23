@@ -8,8 +8,9 @@
     "Peatral"
   ],
   "contact": {
-    "homepage": "https://peatral.xyz/",
-    "sources": "https://github.com/Peatral/Better-Spyglass"
+    "homepage": "https://github.com/Peatral/Better-Spyglass",
+    "sources": "https://github.com/Peatral/Better-Spyglass",
+    "issues": "https://github.com/Peatral/Better-Spyglass/issues"
   },
   "license": "CC0-1.0",
   "icon": "assets/better_spyglass/icon.png",
