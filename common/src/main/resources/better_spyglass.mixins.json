@@ -2,7 +2,7 @@
   "required": true,
   "package": "xyz.peatral.better_spyglass.mixin",
   "compatibilityLevel": "JAVA_17",
-  "refmap": "better_spyglass.refmap.json",
+  "refmap": "better_spyglass-common-common-refmap.json",
   "minVersion": "0.8",
   "mixins": [
     "PlayerMixin",
