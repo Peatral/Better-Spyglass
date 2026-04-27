@@ -28,7 +28,7 @@ import java.util.stream.Stream;
 @Mixin(Player.class)
 public abstract class PlayerMixin extends LivingEntity implements ISpyglassPlayer {
     @Unique
-    private static final ItemStack better_spyglass$SPYGLASS = new ItemStack(Items.SPYGLASS);
+    private static ItemStack better_spyglass$SPYGLASS;
 
     protected PlayerMixin(EntityType<? extends LivingEntity> entityType, Level level) {
         super(entityType, level);
@@ -67,8 +67,17 @@ public abstract class PlayerMixin extends LivingEntity implements ISpyglassPlaye
         better_spyglass$isUsingSpyglass = usingSpyglass;
     }
 
+    @Unique
+    private static ItemStack better_spyglass$getFallbackSpyglass() {
+        if (better_spyglass$SPYGLASS == null) {
+            better_spyglass$SPYGLASS = new ItemStack(Items.SPYGLASS);
+        }
+        return better_spyglass$SPYGLASS;
+    }
+
     @Override
     public Optional<ItemStack> better_spyglass$getSpyglass() {
+
         BetterSpyglassConfig config = BetterSpyglassConfig.get();
         boolean enableInventoryAccess = config.enableInventoryAccess;
         boolean requireSpyglass = config.requireSpyglass;
@@ -80,6 +89,6 @@ public abstract class PlayerMixin extends LivingEntity implements ISpyglassPlaye
                 .filter(stack -> stack.is(Items.SPYGLASS))
                 .findFirst()
                 .or(() -> AccessorySlots.getSpyglass(this))
-                .or(() -> Optional.ofNullable(isCreative() || !requireSpyglass ? better_spyglass$SPYGLASS : null));
+                .or(() -> Optional.ofNullable(isCreative() || !requireSpyglass ? better_spyglass$getFallbackSpyglass() : null));
     }
 }

@@ -1,6 +1,6 @@
 package xyz.peatral.better_spyglass.client.neoforge;
 
-import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
+import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
 import xyz.peatral.better_spyglass.client.BetterSpyglassKeyMappings;
 
 public class BetterSpyglassKeyMappingsImpl {

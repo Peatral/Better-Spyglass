@@ -26,7 +26,7 @@ public class MouseHandlerMixin {
     private Minecraft minecraft;
 
     @Shadow
-    private double lastMouseEventTime;
+    private double lastHandleMovementTime;
 
     @Shadow
     @Final
@@ -38,7 +38,7 @@ public class MouseHandlerMixin {
     @Inject(method = "turnPlayer", at = @At("HEAD"), cancellable = true)
     public void turnPlayer(CallbackInfo ci) {
         if (minecraft.player instanceof ISpyglassClientPlayer spyglassClientPlayer && minecraft.options.getCameraType().isFirstPerson() && minecraft.player.isScoping()) {
-            this.lastMouseEventTime = Blaze3D.getTime();
+            this.lastHandleMovementTime = Blaze3D.getTime();
             double displacementX,displacementY;
 
             double sensitivity = minecraft.options.sensitivity().get() * 0.6 + 0.2;

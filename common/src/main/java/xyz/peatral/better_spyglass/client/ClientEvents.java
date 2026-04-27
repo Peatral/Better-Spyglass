@@ -14,7 +14,7 @@ import xyz.peatral.better_spyglass.player.extensions.ISpyglassPlayer;
 
 public class ClientEvents {
     public static void init() {
-        ClientRawInputEvent.MOUSE_SCROLLED.register((client, amount) -> {
+        ClientRawInputEvent.MOUSE_SCROLLED.register((client, amountX, amountY) -> {
             LocalPlayer player = client.player;
 
             if (!(player instanceof ISpyglassClientPlayer spyglassPlayer)) {
@@ -24,7 +24,7 @@ public class ClientEvents {
             if (player.isScoping()) {
                 if (client.options.getCameraType().isFirstPerson()) {
                     float prevModifier = spyglassPlayer.better_spyglass$getFOVModifier();
-                    float modifier = (float) (prevModifier - (amount * BetterSpyglassConfig.get().zoomStep));
+                    float modifier = (float) (prevModifier - (amountY * BetterSpyglassConfig.get().zoomStep));
                     modifier = Mth.clamp(modifier, 0.1f, 0.8f);
                     if (prevModifier != modifier) {
                         spyglassPlayer.better_spyglass$setFOVModifier(modifier);

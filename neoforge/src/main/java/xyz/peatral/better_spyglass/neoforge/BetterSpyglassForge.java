@@ -1,6 +1,6 @@
 package xyz.peatral.better_spyglass.neoforge;
 
-import net.minecraftforge.fml.common.Mod;
+import net.neoforged.fml.common.Mod;
 
 import xyz.peatral.better_spyglass.BetterSpyglass;
 
