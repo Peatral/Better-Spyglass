@@ -1,4 +1,4 @@
-package xyz.peatral.better_spyglass.compat.forge.curios;
+package xyz.peatral.better_spyglass.compat.neoforge.curios;
 
 import dev.architectury.platform.Platform;
 import net.minecraft.world.entity.LivingEntity;

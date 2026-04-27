@@ -1,8 +1,8 @@
-package xyz.peatral.better_spyglass.compat.forge;
+package xyz.peatral.better_spyglass.compat.neoforge;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
-import xyz.peatral.better_spyglass.compat.forge.curios.CuriosIntegration;
+import xyz.peatral.better_spyglass.compat.neoforge.curios.CuriosIntegration;
 
 import java.util.Optional;
 

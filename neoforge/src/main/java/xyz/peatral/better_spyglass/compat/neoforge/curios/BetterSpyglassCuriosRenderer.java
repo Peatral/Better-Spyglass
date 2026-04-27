@@ -1,4 +1,4 @@
-package xyz.peatral.better_spyglass.compat.forge.curios;
+package xyz.peatral.better_spyglass.compat.neoforge.curios;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.model.EntityModel;

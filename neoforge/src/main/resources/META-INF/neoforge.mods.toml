@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[47,)"
+loaderVersion = "[4,)"
 issueTrackerURL = "https://github.com/Peatral/Better-Spyglass/issues"
 license = "Insert License Here"
 
@@ -15,36 +15,39 @@ Improve your spyglass uses by using it from your belt while your friends watch!
 logoFile = "assets/better_spyglass/icon.png"
 
 [[dependencies.better_spyglass]]
-modId = "forge"
-mandatory = true
-versionRange = "[47,)"
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.better_spyglass]]
 modId = "minecraft"
-mandatory = true
-versionRange = "[1.20.1,)"
+type = "required"
+versionRange = "[1.21.1,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.better_spyglass]]
 modId = "architectury"
-mandatory = true
-versionRange = "[9.2.14,)"
+type = "required"
+versionRange = "[13.0.8,)"
 ordering = "AFTER"
 side = "BOTH"
 
 [[dependencies.better_spyglass]]
 modId="cloth_config"
-mandatory=true
-versionRange="[11.1,)"
+type = "required"
+versionRange="[15.0,)"
 ordering="BEFORE"
 side="BOTH"
 
 [[dependencies.better_spyglass]]
 modId="curios"
-mandatory=false
-versionRange="[5.9,6.0)"
+type = "optional"
+versionRange="[9.5,10.0)"
 ordering="BEFORE"
 side="BOTH"
+
+[[mixins]]
+config = "better_spyglass.mixins.json"
