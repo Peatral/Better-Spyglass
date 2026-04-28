@@ -7,7 +7,7 @@ import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.Mth;
 import xyz.peatral.better_spyglass.BetterSpyglassConfig;
-import xyz.peatral.better_spyglass.network.BetterSpyglassPackets;
+import xyz.peatral.better_spyglass.network.Networking;
 import xyz.peatral.better_spyglass.network.UseSpyglassPacket;
 import xyz.peatral.better_spyglass.player.extensions.ISpyglassClientPlayer;
 import xyz.peatral.better_spyglass.player.extensions.ISpyglassPlayer;
@@ -54,12 +54,12 @@ public class ClientEvents {
                 if (!spyglassPlayer.better_spyglass$isUsingSpyglass()) {
                     boolean canUse = !player.isUsingItem() && spyglassPlayer.better_spyglass$getSpyglass().isPresent();
                     if (canUse) {
-                        BetterSpyglassPackets.CHANNEL.sendToServer(new UseSpyglassPacket(true, player.getUUID()));
+                        Networking.sendToServer(new UseSpyglassPacket(true, player.getUUID()));
                     }
                 }
             } else {
                 if (spyglassPlayer.better_spyglass$isUsingSpyglass()) {
-                    BetterSpyglassPackets.CHANNEL.sendToServer(new UseSpyglassPacket(false, player.getUUID()));
+                    Networking.sendToServer(new UseSpyglassPacket(false, player.getUUID()));
                 }
             }
         });
