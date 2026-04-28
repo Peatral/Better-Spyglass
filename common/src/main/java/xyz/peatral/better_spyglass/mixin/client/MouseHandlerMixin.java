@@ -3,7 +3,6 @@ package xyz.peatral.better_spyglass.mixin.client;
 import com.mojang.blaze3d.Blaze3D;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.MouseHandler;
-import net.minecraft.util.Mth;
 import net.minecraft.util.SmoothDouble;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;

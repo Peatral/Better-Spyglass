@@ -3,7 +3,6 @@ package xyz.peatral.better_spyglass.mixin.client;
 import com.mojang.authlib.GameProfile;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import xyz.peatral.better_spyglass.player.extensions.ISpyglassClientPlayer;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.AbstractClientPlayer;
 import net.minecraft.core.BlockPos;
@@ -14,6 +13,7 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+import xyz.peatral.better_spyglass.player.extensions.ISpyglassClientPlayer;
 
 @Environment(EnvType.CLIENT)
 @Mixin(AbstractClientPlayer.class)

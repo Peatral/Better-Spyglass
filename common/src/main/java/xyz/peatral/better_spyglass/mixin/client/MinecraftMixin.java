@@ -1,6 +1,5 @@
 package xyz.peatral.better_spyglass.mixin.client;
 
-import xyz.peatral.better_spyglass.player.extensions.ISpyglassPlayer;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.Options;
@@ -10,6 +9,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
+import xyz.peatral.better_spyglass.player.extensions.ISpyglassPlayer;
 
 @Mixin(Minecraft.class)
 public class MinecraftMixin {
